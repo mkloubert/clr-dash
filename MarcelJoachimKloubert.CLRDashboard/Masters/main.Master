@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="MarcelJoachimKloubert.CLRDashboard.Masters.main" %>
+<!DOCTYPE html>
+<html lang="en">
+  <head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CLR Dashboard</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/flot/jquery.flot.min.js"></script>
+
+    <script src="../js/bootstrap.min.js"></script>
+
+    <script src="../js/jsToolbox.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder_Header" runat="server"></asp:ContentPlaceHolder>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cdb-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand" href="Default.aspx">CLR Dashboard</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="cdb-navbar-collapse">
+          <a href="Apps.aspx" class="btn btn-default navbar-btn"><span class="glyphicon glyphicon glyphicon-modal-window" aria-hidden="true"></span> Apps</a>
+          <a href="Autorun.aspx" class="btn btn-default navbar-btn"><span class="glyphicon glyphicon glyphicon-play-circle" aria-hidden="true"></span> Autorun</a>
+          <a href="Network.aspx" class="btn btn-default navbar-btn"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Network</a>
+        </div>
+      </div>
+    </nav>
+
+<asp:ContentPlaceHolder ID="ContentPlaceHolder_Main" runat="server"></asp:ContentPlaceHolder>
+
+    <script src="../js/scripts.js"></script>
+  </body>
+</html>

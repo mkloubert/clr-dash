@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="popup.master.cs" Inherits="MarcelJoachimKloubert.CLRDashboard.Masters.popup" %>
+<!DOCTYPE html>
+<html lang="en">
+  <head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CLR Dashboard</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/styles.popup.css" rel="stylesheet">
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/flot/jquery.flot.min.js"></script>
+
+    <script src="../js/bootstrap.min.js"></script>
+
+    <script src="../js/jsToolbox.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder_Header" runat="server"></asp:ContentPlaceHolder>
+  </head>
+  <body>
+<asp:ContentPlaceHolder ID="ContentPlaceHolder_Main" runat="server"></asp:ContentPlaceHolder>
+
+    <script src="../js/scripts.js"></script>
+  </body>
+</html>

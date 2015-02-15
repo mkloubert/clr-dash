@@ -1,0 +1,25 @@
+﻿{
+    "monitors": [
+        // mysql
+        {
+            "name": "MarcelJoachimKloubert.CLRDashboard.Monitors.MySQL.MySQLMonitor",
+            "displayText": "MySQL",
+            "config": {
+                "connections": [
+                    "Server=localhost;Uid=root;Pwd=;"
+                ]
+            }
+        },
+
+        // drives
+        {
+            "name": "MarcelJoachimKloubert.CLRDashboard.Monitors.Drives.DriveMonitor",
+            "displayText": "Drives",
+            "config": {
+                "drives": [ 
+                    "C:", "D:"
+                ]
+            }
+        }
+    ]
+}
